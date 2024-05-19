@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="shortcut icon" href="img/Logo.ico" type="image/x-icon">
+  <title>Dietética Congreso</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/api.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><a href="index.html">Dietetica</a>
+      </div>
+      <ul class="links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+      </ul>
+      <a href="#" class="action_btn">Comprar</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="dropdown_menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="#" class="action_btn">Comprar</a></li>
+      </ul>
+    </div>
+    <script src="js/menuHamburguesa.js"></script>
+  </header>
+
+  <main>
+    <section class="api">
+      <h5>Consulta de datos nutricionales</h5>
+
+      <label for="inputAlimento">Ingresa el nombre de un alimento:</label>
+      <input type="text" id="inputAlimento">
+      <button onclick="buscarAlimento()">Buscar</button>
+
+      <div id="detallesAlimento"></div>
+    </section>
+    <section class="productos-section">
+      <div class="productos-grid">
+        <div class="producto-item">
+          <h4>Aceites</h4><br>
+          <ul>
+            <li>Oliva - Olive</li>
+            <li>Girasol - Sunflower</li>
+            <li>Maíz - Corn</li>
+            <li>Canola - Canola</li>
+            <li>Soja - Soy</li>
+            <li>Coco - Coconut</li>
+            <li>Lino - Flaxseed</li>
+          </ul>
+        </div>
+        <div class="producto-item">
+          <h4>Celíacos</h4><br>
+          <ul>
+            <li>Harina de Arroz - Rice Flour</li>
+            <li>Harina de garbanzos - Chickpea Flour</li>
+            <li>Harina Integral - Whole Wheat Flour</li>
+            <li>Harina de quinoa - Quinoa Flour</li>
+            <li>Almidón de maíz - Cornstarch</li>
+            <li>Almidón de yuca - Cassava Starch</li>
+            <li>Fécula de patata - Potato Starch</li>
+          </ul>
+        </div>
+        <div class="producto-item">
+          <h4>Cereales y legumbres</h4><br>
+          <ul>
+            <li>Avena - Oats</li>
+            <li>Soja - Soy</li>
+            <li>trigo sarraceno - Buckwheat</li>
+            <li>Mijo - Millet</li>
+            <li>Centeno - Rye</li>
+            <li>maíz - Corn</li>
+            <li>quinoa - Quinoa</li>
+          </ul>
+        </div>
+        <div class="producto-item">
+          <h4>Endulzantes</h4><br>
+          <ul>
+            <li>Azúcar mascabo - Mascabo Sugar</li>
+            <li>Panela - Panela</li>
+            <li>Miel de abeja - Honey</li>
+            <li>Miel de caña o melaza - Cane Honey or Molasses</li>
+            <li>Estevia - Stevia</li>
+            <li>Azúcar de caña - Cane Sugar</li>
+            <li>Azúcar de coco - Coconut Sugar</li>
+          </ul>
+        </div>
+        <div class="producto-item">
+          <h4>Especias</h4><br>
+          <ul>
+            <li>Orégano - Oregano</li>
+            <li>Tomillo - Thyme</li>
+            <li>Ají molido - Chili Powder</li>
+            <li>Pimienta - Pepper</li>
+            <li>Nuez moscada - Nutmeg</li>
+            <li>Enebro - Juniper</li>
+            <li>Clavo de olor - Clove</li>
+            <li>Canela - Cinnamon</li>
+            <li>Cardamomo - Cardamom</li>
+            <li>Cilantro - Coriander</li>
+            <li>Jengibre - Ginger</li>
+          </ul>
+        </div>
+        <div class="producto-item">
+          <h4>Frutas deshidratadas</h4><br>
+          <ul>
+            <li>Ciruelas pasas - Prunes</li>
+            <li>Higos secos - Dried Figs</li>
+            <li>Uvas pasas - Raisins</li>
+            <li>Dátiles - Dates</li>
+            <li>Arándanos deshidratados - Dried Cranberries</li>
+            <li>Orejones - Apricots</li>
+            <li>Peras deshidratadas - Dried Pears</li>
+          </ul>
+        </div>
+        <div class="producto-item">
+          <h4>Frutos secos</h4><br>
+          <ul>
+            <li>Nueces pecán - Pecans</li>
+            <li>Almendras - Almonds</li>
+            <li>Avellanas - Hazelnuts</li>
+            <li>Castañas de cajú - Cashews</li>
+            <li>Pistacchio - Pistachios</li>
+            <li>Maní - Peanuts</li>
+            <li>Castañas - Chestnuts</li>
+          </ul>
+        </div>
+        <div class="producto-item">
+          <h4>Leches Vegetales</h4><br>
+          <ul>
+            <li>Leche de avena - Oat Milk</li>
+            <li>Leche de almendras - Almond Milk</li>
+            <li>Leche de coco - Coconut Milk</li>
+            <li>Leche de avellanas - Hazelnut Milk</li>
+            <li>Leche de castañas - Chestnut Milk</li>
+            <li>Leche de pistacchios - Pistachio Milk</li>
+            <li>Leche de soja - Soy Milk</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <p>Nuestras redes</p>
+      <a href="https://es-la.facebook.com/"><img width="35" src="img/redes/facebook.png"
+          alt="Ícono de Facebook - Enlace a nuestra página de Facebook"></a>
+      <a href="https://www.instagram.com/"><img width="30" src="img/redes/instagram.png"
+          alt="Ícono de Instagram - Enlace a nuestra página de Instagram"></a>
+      <a href="https://www.tiktok.com/"><img width="30" src="img/redes/tiktok.png"
+          alt="Ícono de Tik Tok - Enlace a nuestra página de Tik Tok"></a>
+      <a href="https://api.whatsapp.com/"><img width="30" src="img/redes/whatsapp.png"
+          alt="Ícono de Whatsapp - Enlace a nuestra página de Whatsapp"></a>
+      <a href="https://www.youtube.com/"><img width="30" src="img/redes/youtube.png"
+          alt="Ícono de Youtube - Enlace a nuestra página de Youtube"></a>
+    </nav>
+    <p class="footer-parrafo">
+      <span>© Copyright 2024.</span> Todos los derechos reservados. Las fotos son a modo ilustrativo. La venta de
+      cualquiera de
+      los productos publicados está sujeta a la verificación de stock.
+    </p>
+  </footer>
+</body>
+
+</html>
