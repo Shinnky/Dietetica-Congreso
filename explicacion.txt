@@ -1,0 +1,15 @@
+Alejandra y Leandro, nuestro equipo, ha desarrollado una página web dedicada a una dietética, tomando como ejemplo una dietética del congreso. Nuestro proyecto consta de 4 páginas.
+
+En la página de inicio, presentamos una barra de navegación central, que se adapta a diferentes dispositivos gracias a su diseño responsive. Esta barra se transformará en un menú hamburguesa para una mejor experiencia de usuario en dispositivos móviles. Justo debajo, hemos preparado una presentación de la dietética, con un diseño visualmente atractivo y separado por un elemento decorativo. Además, hemos incorporado un banner dinámico que muestra los productos destacados de la dietética, organizados en un grid con animaciones sutiles que realzan su atractivo visual.
+
+En el footer, hemos incluido diferentes iconos que enlazan a las redes sociales de la dietética. Para mantener la armonía de colores, tanto la barra de navegación como el footer han sido diseñados con la misma paleta de colores.
+
+En la página de productos, hemos creado una sección llamada "Consulta de datos nutricionales", la cual nos permite consultar información sobre diferentes alimentos. Estas consultas deben realizarse en inglés. La API que utilizamos para esta función se encuentra en la siguiente URL: [https://www.ers.usda.gov/developer/data-apis/arms-data-api/].
+
+Justo debajo, hemos incluido una sección de productos que muestra en tablas una lista de los productos destacados que se presentaron en el banner de inicio. Para organizar esta sección, hemos utilizado un diseño en grid que facilita la visualización y la navegación del usuario.
+
+En la página de Contacto, hemos implementado un formulario que cumple con las especificaciones solicitadas en el trabajo. Los datos ingresados en este formulario son enviados al correo electrónico de los integrantes del grupo utilizando una función de formularios de Netlify. Además, hemos agregado animaciones al botón de enviar para hacerlo más interactivo y atractivo para el usuario.
+
+Además, hemos incorporado una función en JavaScript que valida el formulario antes de ser enviado. Si el usuario no completa todos los campos obligatorios, aparecerá una alerta indicando los campos que faltan por completar, asegurando así que todos los datos necesarios sean proporcionados antes de enviar el formulario.
+
+En la página Nosotros, proporcionamos información detallada sobre nuestro equipo y la dietética. Además, hemos agregado dos iframes de Google Maps para mostrar la ubicación de nuestra dietética y facilitar a los visitantes encontrar nuestra ubicación física de manera rápida y sencilla.
