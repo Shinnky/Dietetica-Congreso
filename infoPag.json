@@ -14,7 +14,7 @@
       },
       {
         "nombre": "Productos",
-        "contenido": "En la página de productos, hemos creado una sección llamada 'Consulta de datos nutricionales', la cual nos permite consultar información sobre diferentes alimentos. Estas consultas deben realizarse en inglés. La API que utilizamos para esta función se encuentra en la siguiente URL: [URL de la API]. Justo debajo, hemos incluido una sección de productos que muestra en tablas una lista de los productos destacados que se presentaron en el banner de inicio. Para organizar esta sección, hemos utilizado un diseño en grid que facilita la visualización y la navegación del usuario."
+        "contenido": "En la página de productos, hemos creado una sección llamada 'Consulta de datos nutricionales', la cual nos permite consultar información sobre diferentes alimentos. Estas consultas deben realizarse en inglés. La API que utilizamos para esta función se encuentra en la siguiente URL: [https://www.ers.usda.gov/developer/data-apis/arms-data-api/]. Justo debajo, hemos incluido una sección de productos que muestra en tablas una lista de los productos destacados que se presentaron en el banner de inicio. Para organizar esta sección, hemos utilizado un diseño en grid que facilita la visualización y la navegación del usuario."
       },
       {
         "nombre": "Contacto",
